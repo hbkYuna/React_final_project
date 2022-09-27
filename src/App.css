@@ -1,0 +1,17 @@
+.ticketMenuFlex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Modal style*/
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: papayawhip;
+    border: 2px solid #000;
+}
