@@ -8,6 +8,16 @@ export function FilmModal(props) {
         open = false
     }
 
+    let handleOpenModal;
+    handleOpenModal = () => {
+        this.setState({ isOpen: true });
+    };
+
+    let handleCloseModal;
+    handleCloseModal = () => {
+        this.setState({ isOpen: false });
+    };
+
     return (
         <Modal isOpen={open} onRequestClose={handleClose}>
             <div className="modal">
