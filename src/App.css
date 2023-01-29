@@ -1,0 +1,219 @@
+.ticketMenuFlex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Homepage styling */
+
+.homePageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.homePageHeader {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.homePageButton {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.homePageButton:hover {
+    background-color: #3e8e41;
+}
+
+
+/*Modal style*/
+
+.ticketContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filmButton {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.filmTitle {
+    text-align: center;
+    margin: 0;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modalWindow {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filmImage {
+    height: 300px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.filmName {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.closeButton, .addButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.closeButton:hover, .addButton:hover {
+    background-color: #3e8e41;
+}
+
+
+.modalWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    background-color: papayawhip;
+    border: 2px solid #000;
+}
+
+.cartItem {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Cart */
+
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.cartTitle {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.cartItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cartFilmName {
+    width: 60%;
+    margin-right: 8px;
+}
+
+.cartFilmPrice {
+    width: 40%;
+    text-align: right;
+}
+
+.cartTotal {
+    text-align: right;
+    margin-top: 16px;
+}
+
+.parentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+/* FAQ */
+
+.faq-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.faq-section {
+    margin-bottom: 40px;
+}
+
+/* Ticket */
+/* Ticket */
+/* Ticket */
+/* Ticket */
+/* Ticket */
+/* Ticket */
+/* Ticket */
+/* Ticket */
