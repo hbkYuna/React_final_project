@@ -3,6 +3,7 @@ import Homepage from './Homepage';
 import {TicketMenu} from './TicketMenu';
 import {Faq} from './Faq';
 import {ContactUs} from "./ContactUs";
+import {Reviews} from "./Reviews";
 
 export function Navigation() {
     const [currentComponent, setCurrentComponent] = useState('home');
@@ -17,6 +18,8 @@ export function Navigation() {
                 return <Faq />;
             case 'contactus':
                 return <ContactUs />;
+            case 'reviews':
+                return <Reviews />;
         }
     }
 
@@ -24,9 +27,10 @@ export function Navigation() {
         <div className="navigationContainer">
             <nav className="navigationBar">
                 <button className="navigationButton" onClick={() => setCurrentComponent('home')}>Home</button>
-                <button className="navigationButton" onClick={() => setCurrentComponent('tickets')}>Tickets</button>
+                <button className="navigationButton" onClick={() => setCurrentComponent('tickets')}>Movies</button>
                 <button className="navigationButton" onClick={() => setCurrentComponent('faq')}>FAQ</button>
                 <button className="navigationButton" onClick={() => setCurrentComponent('contactus')}>Contact</button>
+                <button className="navigationButton" onClick={() => setCurrentComponent('reviews')}>Reviews</button>
 
             </nav>
             {renderComponent()}

@@ -1,6 +1,8 @@
+import React from 'react';
+import { data } from '../data/data';
+
 export function Cart(props) {
     let totalPrice = 0;
-
     return (
         <>
             {props.films.length !== 0 &&
@@ -17,9 +19,10 @@ export function Cart(props) {
                             )
                         })}
                     </div>
-                    <h4 className="cartTotal">Totaal: {totalPrice}</h4>
+                    <h4 className="cartTotal">Total: {totalPrice}</h4>
                 </div>
             }
         </>
-    )
+    );
+
 }
