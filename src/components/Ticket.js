@@ -1,30 +1,37 @@
-import {useState} from 'react';
-import Modal from "react-modal";
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 
 export function Ticket(props) {
-    const film = props.film
-    const addFilm = props.addFilm
-    const [open, setOpen] = useState(false)
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const { film, addFilm } = props;
 
-    function FilmModal(props) {
-        return (
-            <Modal isOpen={open} className="modal">
-                <div className="modalWindow">
-                    <img className="filmImage" src={props.film.image} alt="film"/>
-                    <div className="filmName">{props.film.name}</div>
-                    <button className="closeButton" onClick={() => setOpen(false)}>Close</button>
-                    <button className="addButton" onClick={() => addFilm(props.film)}>Add</button>
-                </div>
-            </Modal>
-        )
-    }
+    const handleAddFilm = () => {
+        addFilm(film);
+        setModalIsOpen(false);
+    };
 
     return (
         <div className="ticketContainer">
-            <button className="filmButton" onClick={() => setOpen(true)}>
+            <button className="filmButton" onClick={() => setModalIsOpen(true)}>
                 <h2 className="filmTitle">{film.name}</h2>
             </button>
-            <FilmModal film={film} open={open}/>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                className="modal"
+                contentLabel="Film Modal"
+            >
+                <div className="modalWindow">
+                    <img className="filmImage" src={film.image} alt={film.name} />
+                    <div className="filmName">{film.name}</div>
+                    <button className="closeButton" onClick={() => setModalIsOpen(false)}>
+                        Close
+                    </button>
+                    <button className="addButton" onClick={handleAddFilm}>
+                        Add
+                    </button>
+                </div>
+            </Modal>
         </div>
-    )
+    );
 }
