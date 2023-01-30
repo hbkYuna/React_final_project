@@ -434,5 +434,36 @@ body {
     appearance: none;
 }
 
-/* Ticket */
+/* Socials */
+
+.socialsContainer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.socialsRow {
+    margin-bottom: 40px;
+}
+
+.socialsCol {
+    margin: 0 auto;
+}
+
+.socialsTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.socialsInfo {
+    font-size: 18px;
+}
+
+.socialsEmail,
+.socialsPhone,
+.socialsInstagram,
+.socialsFacebook {
+    font-weight: bold;
+}
+
 /* Ticket */
